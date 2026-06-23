@@ -7,3 +7,6 @@ data/
 logs/
 *.log
 .env
+notebooks/mlruns/
+notebooks/mlflow.db
+*.h5
