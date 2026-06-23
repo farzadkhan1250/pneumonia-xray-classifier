@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.idea/
+models/*.keras
+data/
+logs/
+*.log
+.env
