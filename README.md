@@ -90,8 +90,16 @@ source .venv/bin/activate
 
 ### 3. Install dependencies
 
+For the **container/app runtime**, install only the minimal set:
+
 ```bash
 pip install -r requirements.txt
+```
+
+For **Jupyter notebook / training / experimentation** work, install the broader dev set instead:
+
+```bash
+pip install -r requirements-dev.txt
 ```
 
 ### 4. Add the trained model

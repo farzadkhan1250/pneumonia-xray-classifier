@@ -45,7 +45,7 @@ async def predict(file: UploadFile = File(...)):
     processed = preprocess_image(image)
 
     pred = model.predict(processed)[0][0]
-    label = "PNEUMONIA" if pred >= 0.5 else "NORMAL"
+    label = "NORMAL" if pred >= 0.5 else "PNEUMONIA"
     confidence = float(pred) if pred >= 0.5 else float(1 - pred)
 
     return {"prediction": label, "confidence": round(confidence, 4)}
